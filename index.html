@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+    <div class="titulo">
+    <h1 id = "title"> Comida Mexicana</h1>
+    <p id = 'description'>eu consequat ac felis donec et odio pellentesque diam volutpat</p>
+    </div>
+    
+    <form action="" id ='survey-form'>
+        <div class ='preguntaRespuesta', >
+        <label  class="etiqueta" id ='name-label'for="nombre">Nombre completo: </label>
+        <input class="respuesta" id="name"type="text" placeholder="Pon tu nombre" required>
+            </div>
+            <div class="preguntaRespuesta">
+        <label  class="etiqueta"id ='email-label'for="email">Correo electronico </label>
+        <input class="respuesta"type="email" id="email" placeholder='example@correo.com' required title="Ingrese su email por favor">
+    </div>
+    <div class ='preguntaRespuesta'>
+        <label  class="etiqueta"id ='numer-label'for="age">Edad</label>
+        <input class="respuesta"id="number" type="number" placeholder="Introduzca su edad porfavor" min="10" max="99" required>
+    </div>
+    <div class="preguntaRespuesta">
+        <label class="etiqueta" for="choose">De que parte de la republica perteneces?</label>    
+        <select class="respuesta" name="dropdown" id="dropdown">
+            <option value="aguascalientes"> Aguascalientes</option>
+            <option value="BajaCalifornia">Baja California</option>
+            <option value="BajaCaliforniaSur">Baja California Sur</option>
+            <option value="Campeche">Campeche</option>
+            <option value="Chiapas">Chiapas</option>
+            <option value="Chihuahua">Chihuahua</option>
+            <option value="Coahuila">Coahuila</option>
+            <option value="Colima">Colima</option>
+            <option value="CiudadDeMexico">Ciudad de México</option>
+            <option value="Durango">Durango</option>
+            <option value="Guanajuato">Guanajuato</option>
+            <option value="Guerrero">Guerrero</option>
+            <option value="Hidalgo">Hidalgo</option>
+            <option value="Jalisco">Jalisco</option>
+            <option value="Mexico">México</option>
+            <option value="Michoacan">Michoacán</option>
+            <option value="Morelos">Morelos</option>
+            <option value="Nayarit">Nayarit</option>
+            <option value="NuevoLeon">Nuevo León</option>
+            <option value="Oaxaca">Oaxaca</option>
+            <option value="Puebla">Puebla</option>
+            <option value="Queretaro">Querétaro</option>
+            <option value="QuintanaRoo">Quintana Roo</option>
+            <option value="SanLuisPotosi">San Luis Potosí</option>
+            <option value="Sinaloa">Sinaloa</option>
+            <option value="Sonora">Sonora</option>
+            <option value="Tabasco">Tabasco</option>
+            <option value="Tamaulipas">Tamaulipas</option>
+            <option value="Tlaxcala">Tlaxcala</option>
+            <option value="Veracruz">Veracruz</option>
+            <option value="Yucatan">Yucatán</option>
+            <option value="Zacatecas">Zacatecas</option>
+        </select>
+    </div>
+    <h2> Que prefieres </h2>
+    <div class ='preguntaRespuesta'>
+        <label class="etiqueta" for="opcion">Agua de...</label>
+        <input class ='choose' type="radio" name="opcionMultiple" value="Jamaica" >Jamaica
+        <input class ='choose' type="radio" name="opcionMultiple" value="Horchata">Horchata
+    </div>
+    <div class ='preguntaRespuesta'>
+        <label class="etiqueta" for="opcion">Salsa</label>
+        <input  type="radio" name="opcionMultiple" value="Verde" >Verde
+        <input type="radio" name="opcionMultiple" value="Roja">Roja
+    </div>
+    <div class="preguntaRespuesta">
+        <label for="comida">Selecciona los Platillos Mexicanos que Has Probado:</label>
+        <div class="opciones">
+        <label><input type="checkbox" name="comida" value="Tacos"> Tacos</label>
+        <label><input type="checkbox" name="comida" value="Guacamole"> Guacamole</label>
+        <label><input type="checkbox" name="comida" value="Enchiladas"> Enchiladas</label>
+        <label><input type="checkbox" name="comida" value="Tamales"> Tamales</label>
+        <label><input type="checkbox" name="comida" value="ChilesEnNogada"> Chiles en Nogada</label>
+        <label><input type="checkbox" name="comida" value="MolePoblano"> Mole Poblano</label>
+        <label><input type="checkbox" name="comida" value="Pozole"> Pozole</label>
+        <label><input type="checkbox" name="comida" value="Ceviche"> Ceviche</label>
+        <label><input type="checkbox" name="comida" value="Quesadillas"> Quesadillas</label>
+        <label><input type="checkbox" name="comida" value="Sopes"> Sopes</label>
+        <label><input type="checkbox" name="comida" value="CochinitaPibil"> Cochinita Pibil</label>
+        <label><input type="checkbox" name="comida" value="Tlayudas"> Tlayudas</label>
+        <label><input type="checkbox" name="comida" value="Chapulines"> Chapulines</label>
+        <label><input type="checkbox" name="comida" value="Barbacoa"> Barbacoa</label>
+        <label><input type="checkbox" name="comida" value="Escamoles"> Escamoles</label>
+        <label><input type="checkbox" name="comida" value="Machaca"> Machaca</label>
+        <label><input type="checkbox" name="comida" value="PulpoALaGallega"> Pulpo a la Gallega</label>
+        </div>
+    </div>
+    <div class="preguntaRespuesta">
+        <label  class="etiqueta" for="duda">Cual es tu platillo preferido </label>
+        <textarea class="textarea" name="comidaFavorita" id="comidaFavorita" cols="30" rows="10"></textarea>
+    </div>
+    <button id ='submit'>Submit</button>
+    </form>
+</main>
+</body>
+
+</html>
